@@ -36,19 +36,8 @@ public class Hello {
     }
 }
 
-    @RestController
-    class GreetingController {
-        private static final String template = "Hello, %s!";
-        private final AtomicLong counter = new AtomicLong();
-
-        @GetMapping("/greeting")
-        public Greeting gretting (@RequestParam(value = "name", defaultValue = "World") String name){
-            return new Greeting(counter.incrementAndGet(),
-                    String.format(template, name));
-        }
 
     /*@PutMapping("/put/{firstName}")
     public String Hello(@PathVariable String firstName, @RequestParam(value = "lastName") String lastName){
         return "Hello " +firstName + " " + lastName + "!";
     }*/
-}
