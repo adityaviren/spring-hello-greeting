@@ -8,10 +8,10 @@
         <version>2.4.0</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.cg</groupId>
-    <artifactId>hello</artifactId>
+    <groupId>com.bridgelabz</groupId>
+    <artifactId>greetingapp</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>hello</name>
+    <name>greetingapp</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
@@ -30,18 +30,22 @@
             <scope>test</scope>
         </dependency>
 
+        <!-- https://mvnrepository.com/artifact/com.h2database/h2 -->
         <dependency>
             <groupId>com.h2database</groupId>
             <artifactId>h2</artifactId>
-            <version>1.4.200</version>
+            <version>1.4.197</version>
             <scope>test</scope>
         </dependency>
 
-        <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-data-jpa -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
-            <version>2.3.4.RELEASE</version>
+            <version>2.3.1.RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>com.h2database</groupId>
+            <artifactId>h2</artifactId>
         </dependency>
 
     </dependencies>
